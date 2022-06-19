@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row login_form">
+        <label for="">Name of product:</label>
+
+        <div class="col-md-12 form-group">
+
+            <input type="text" class="form-control" id="productNameUp" value=${findProduct.prName}>
+            <!-- <span id="prNameError"></span> -->
+        </div>
+        <label for="">Price of product:</label>
+
+        <div class="col-md-12 form-group">
+
+            <input type="text" class="form-control" id="productPriceUp" value="${findProduct.prPrice}">
+            <!-- <span id="priceError"></span> -->
+        </div>
+        <label for="">Stock:</label>
+
+        <div class="col-md-12 form-group">
+
+            <input type="text" class="form-control" id="productStockUp" value="${findProduct.prStock}">
+            <!-- <span id="stockError"></span> -->
+        </div>
+        <!-- <input value="">-->
+
+        <label for="">category:</label>
+
+        <div class="col-md-12 form-group">
+
+            <input type="text" class="form-control" value="${findProduct.prCategories}" disabled>
+            <!-- <span id="stockError"></span> -->
+        </div>
+
+        <label for="">Update category</label>
+
+        <div class="col-md-12 form-group">
+
+            <button type="submit" value="submit" class="primary-btn  mt-2" onclick="updateeProduct(${idProduct},${findposition})">Update</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
